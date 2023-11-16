@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bricolage+Grotesque&family=Dancing+Script:wght@400;700&family=Inter:wght@300&family=PT+Serif&family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,300;1,100&family=Tilt+Prism&display=swap');
+body {
+    margin: 0;
+    background-color: rgb(234, 232, 232);
+    font-family: "Poppins", sans-serif;
+    
+}
+img{
+    max-width: 100%;
+}
+
+.logo{
+    margin-left: 3%;
+    width: 100%;
+    color: rgb(65, 65, 68);
+
+}
+@media screen and (max-width: 768px) {
+    .logo{
+        position: relative;
+        max-width: 100%;
+        height: auto; /* Para mantener la relación de aspecto de la imagen */
+        margin-left: 100px;
+        top: 8px;
+
+
+    }
+    
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(65, 65, 68);
+     
+}
+
+.toggle-menu{
+    position: fixed;
+    top: -1rem;
+    left: -0.6rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 80px;
+    z-index: 999999;
+    transition: ease 2s;
+}
+@media screen and (min-width: 768px) {
+    .toggle-menu {
+        display: none;
+    }
+    
+}
+.main-menu {
+    position: fixed;
+    width: 100%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(100px);
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+    
+    
+}
+
+.nav_img{
+    margin-bottom: -0px;
+    max-width: 100%;
+    min-width: 100%;
+    object-fit:cover;
+    margin: 0;
+}
+.main-menu--show{
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+    .main-menu {
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: translateY(0);
+        z-index: 22;
+
+
+    }
+    
+}
+.main-menu__item {
+    padding: 2em;
+}
+.main-menu__link {
+    color: rgb(49, 49, 50);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#active{
+    text-decoration: underline;
+    font-size: larger;
+    color: #bc7d08;
+}
+
+.seo{
+    position: relative;
+    display: flex;
+  }
+  
+  
+  .huge3 {
+    position:absolute;
+    width: 100%;
+
+}
+
+.huge3 {
+    width: 30%;
+    top: 25%;
+    left: 50%;
+    
+
+}
+
+.huge3 img{
+    border-radius: 10px;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.272);
+
+}
+
+
+.seo h1{
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+    font-family: cursive;
+    font-size: 3.5vw;
+    color: rgb(238, 170, 103);
+}
+
+.seo p {
+    flex-wrap: wrap;
+    position: absolute;
+    width: 40%;
+    max-height: 70%; 
+    padding: 10px;
+    text-align: center;
+    font-size: 2.5vw;
+    background: transparent;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(10px);
+    color: aliceblue;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .seo p {
+      font-size: 3vw; 
+    }
+  }
+
+  .seo2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5vw;
+    position: relative; 
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+
+.seo2 h3{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    background-color: rgba(255, 119, 0, 0.304);
+    padding: 10px;
+    margin: 0;
+    color: rgb(53, 55, 56);
+
+}
+
+.seo2 button {
+    position: absolute;
+    bottom: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(#70431b, #55382f);
+    padding: 20px 30px;
+    color: white; 
+    border: none; /* Elimina el borde si es necesario */
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 2.9vw;
+    transition: 200ms ease;
+    
+}
+
+.seo2 button:hover{
+    background: linear-gradient(#613815, #412922);
+    bottom: 20.3%;
+    box-shadow: 10px 20px 30px #61381548;
+    ;
+
+
+}
+.gif_container{
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    max-height: 100%;
+    font-size: 10px;
+}
+
+.wrapper{
+
+    position: absolute;
+    margin: 10%;
+    background: transparent;
+    border: 5px solid rgba(160, 160, 160, 0.2);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(100px);
+    box-shadow: 0 10px rgba(250, 246, 0, 246, 1.9);
+    color: #151414;
+    border-radius: 14px;
+    padding: 100px 100px;
+    bottom: 0;
+    height: 240px;
+    
+
+}
+
+
+    
+.wrapper h1 {
+    position: relative;
+    top: -70px;
+    font-size: 26px; /* Puedes ajustar el tamaño de fuente a tu preferencia */
+    text-align: center;
+  }
+
+
+  .wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: rgb(41, 16, 16);
+    margin: 20px 0;
+    background: transparent;
+    right: 10%;
+    
+  }
+
+  .wrapper .input-box- {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: rgb(155, 147, 147);
+    margin: 20px 0;
+    background: transparent;
+    
+  }
+  .wrapper {
+    /* Estilos para tamaños de pantalla más grandes */
+    padding: 10%;
+    margin: 10%;
+    /* Otros estilos... */
+}
+
+#country{
+    position: relative;
+    width: 50%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1.5px solid rgb(80, 78, 78);
+    border-radius: 40px;
+    font-size: 8px;
+    color: #fff;
+    padding: 5px;
+    left: -20px;
+}
+
+#region{
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    background: rgba(173, 173, 173, 0.031);
+    border: none;
+    border: 2px solid rgb(80, 78, 78);
+    border-radius: 40px;
+    font-size: 8px;
+    color: #fff;
+    padding: 5px;
+    left: -20px;
+
+
+}
+
+.message input{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(80, 78, 78);
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    left: -20px;
+}
+.gif_container button{
+    position: relative;
+}
+#btn {
+    height: inherit;
+    width: 40%;
+    margin-left: 29%;
+    top: -30px;
+}
+.remenber-forgot button{
+    display: none;
+}
+
+@media screen and (max-width: 909px) {
+
+    .wrapper{
+        height: 150px;
+    }
+
+.wrapper h1{
+    color: #ffffff;
+    position: relative;
+    top: -60px;
+    font-size: 16px;
+}
+.wrapper .input-box input{
+    position: relative;
+    top: -70px;
+    color: #533d36;
+    height: 5px;
+}
+
+.wrapper input{
+    color: red;
+}
+
+
+
+#country{
+    position: relative;
+    width: 50%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1.5px solid rgb(80, 78, 78);
+    border-radius: 40px;
+    font-size: 8px;
+    color: #fff;
+    padding: 5px;
+    top: -80px;
+    left: -20px;
+}
+
+#region{
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    background: rgba(173, 173, 173, 0.031);
+    border: none;
+    border: 2px solid rgb(80, 78, 78);
+    border-radius: 40px;
+    font-size: 8px;
+    color: #fff;
+    padding: 5px;
+    left: -20px;
+    top: -85px;
+
+
+}
+
+.message input{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(80, 78, 78);
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    left: -20px;
+    top: -140px;
+}
+.gif_container button{
+    position: relative;
+    top:-280px;
+}
+#btn {
+    height: inherit;
+    width: 40%;
+    margin-left: 29%;
+    top: -120px;
+}
+.remenber-forgot button{
+    display: none;
+}
+
+}
+
+
+
+
+
+.input-box input{
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(80, 78, 78);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+@media screen and (max-width: 579px) {
+      .wrapper{
+        width: auto;
+        height: 100px;
+        top: -22px;
+    }
+
+    .wrapper h1{
+        position: relative;
+        top: -42px;
+        font-size: 12px;
+        color: #ffffff;
+    }
+
+
+
+    .input-box input{
+        position: relative;
+        width: auto;
+        height: 200px;
+        padding: 7px;
+        margin-top: 10px;
+        border: 1.3px solid rgb(81, 81, 81);
+}
+
+.input-box i{
+    width: 200;
+    font-size: 16px;
+}
+#country{
+    position: relative;
+    width: 50%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1.5px solid rgb(80, 78, 78);
+    border-radius: 40px;
+    font-size: 8px;
+    color: #fff;
+    padding: 5px;
+    top: -100px;
+    left: -20px;
+}
+
+#region{
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1.5px solid rgb(80, 78, 78);
+    border-radius: 40px;
+    font-size: 8px;
+    color: #fff;
+    padding: 5px;
+    top: -100px;
+    left: -20px;
+    
+
+}
+
+.message input{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(80, 78, 78);
+    border-radius: 6px;
+    font-size: 8px;
+    color: #fff;
+    padding: 20px;
+    left: -20px;
+    top: -150px;
+}
+.gif_container button{
+    position: relative;
+    top: -10px;
+}
+#btn {
+    height: inherit;
+    width: auto;
+    margin-left: 35%;
+    box-shadow: 10px 1px 2px 3px rgba(128, 128, 128, 0.154);
+    top: -320px;
+}
+.remenber-forgot button{
+    display: none;
+}
+}
+.input-box- input::placeholder {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10PX;
+  }
+  .input-box input::placeholder {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10PX;
+  }
+
+  .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    margin-left: 10%;
+
+  }
+
+
+
+
+  
+
+
+.remenber-forgot  {
+    position: relative;
+
+}
+
+
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  position: relative;
+  margin-right: 10%;
+  margin-top: 20%;
+  background: #ececec;
+  border: none; 
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: 100ms linear;
+}
+
+.btn:hover{
+  position: relative;
+  margin-left: -2px;
+  background: #e0dddd;
+  width: 335px;
+  height: 45.5px;
+
+
+}
+
+
+.remenber-forgot{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    justify-content: center;
+    bottom: 20px;
+    
+}
+
+.remenber-forgot button{
+    position: absolute;
+    bottom: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(#1b3470, #533d36);
+    padding: 20px 30px;
+    border: none; /* Elimina el borde si es necesario */
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 2.9vw;
+    transition: 200ms ease;
+    text-decoration: none;
+    
+}
+
+.remenber-forgot a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    padding: 40px;
+    margin-top: -22px;
+    top: 0;
+    background-color: #232222;
+    text-align: center;
+    color: #d4d1d1;
+}

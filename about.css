@@ -1,0 +1,895 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bricolage+Grotesque&family=Dancing+Script:wght@400;700&family=Inter:wght@300&family=PT+Serif&family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,300;1,100&family=Tilt+Prism&display=swap');
+body {
+    margin: 0;
+    background-color: rgb(234, 232, 232);
+    font-family: "Poppins", sans-serif;
+    
+}
+img{
+    max-width: 100%;
+}
+
+.logo{
+    margin-left: 3%;
+    width: 100%;
+    color: rgb(65, 65, 68);
+
+}
+@media screen and (max-width: 768px) {
+    .logo{
+        position: relative;
+        max-width: 100%;
+        height: auto; /* Para mantener la relación de aspecto de la imagen */
+        margin-left: 100px;
+        top: 8px;
+
+
+    }
+    
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(230, 131, 2);
+     
+}
+
+.toggle-menu{
+    position: fixed;
+    top: -1rem;
+    left: -0.6rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 80px;
+    z-index: 999999;
+    transition: ease 2s;
+}
+@media screen and (min-width: 768px) {
+    .toggle-menu {
+        display: none;
+    }
+    
+}
+.main-menu {
+    position: fixed;
+    width: 100%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(100px);
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+    
+    
+}
+
+.nav_img{
+    margin-bottom: -0px;
+    max-width: 100%;
+    min-width: 100%;
+    object-fit:cover;
+    margin: 0;
+}
+.main-menu--show{
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+    .main-menu {
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: translateY(0);
+        z-index: 22;
+
+
+    }
+    
+}
+.main-menu__item {
+    padding: 2em;
+}
+.main-menu__link {
+    color: rgb(230, 131, 2);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#active{
+    text-decoration: underline;
+    font-size: larger;
+}
+
+.seo{
+    position: relative;
+    display: flex;
+  }
+  
+  
+  .huge3 {
+    position:absolute;
+    width: 100%;
+
+}
+
+.huge3 {
+    width: 30%;
+    top: 25%;
+    left: 50%;
+    
+
+}
+
+.huge3 img{
+    border-radius: 10px;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.272);
+
+}
+
+
+.seo h1{
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+    font-family: cursive;
+    font-size: 3.5vw;
+    color: rgb(238, 170, 103);
+}
+
+.seo p {
+    flex-wrap: wrap;
+    position: absolute;
+    width: 40%;
+    max-height: 70%; 
+    padding: 10px;
+    text-align: center;
+    font-size: 2.5vw;
+    background: transparent;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(10px);
+    color: aliceblue;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .seo p {
+      font-size: 3vw; 
+    }
+  }
+
+  .seo2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5vw;
+    position: relative; 
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+
+.seo2 h3{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    background-color: rgba(255, 119, 0, 0.304);
+    padding: 10px;
+    margin: 0;
+    color: rgb(53, 55, 56);
+
+}
+
+.seo2 button {
+    position: absolute;
+    bottom: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(#70431b, #55382f);
+    padding: 20px 30px;
+    color: white; 
+    border: none; /* Elimina el borde si es necesario */
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 2.9vw;
+    transition: 200ms ease;
+    
+}
+
+.filterContainer {
+    display: flex;
+
+
+}
+
+.filterContainer img {
+    height: auto;
+    max-width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+}
+
+
+
+
+#contenedor-de-texto{
+    position: absolute;
+    top: 220px;
+    left: 200px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    clear: both;
+    transition: 200ms ease;
+}
+@media (max-width: 1100px){
+    #contenedor-de-texto {
+        left: 40px;
+        top: 219px;
+        position: absolute;
+        font-size: 15px;
+
+    }
+
+    #s1{
+        position: absolute;
+        font-size: 1px;
+
+        }
+}
+
+#hi{
+    margin-left: 100px;
+}
+#contenedor-de-texto h1{
+    color: rgb(230, 131, 2);
+
+}
+
+#pala {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: -300px;
+    width: 100%;
+    height: 600px;
+    color: rgb(202, 202, 202);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: ease 200ml;
+}
+#pala span{
+    position: relative;
+    top: 250px;
+    font-size: 40px;
+    text-align: center;
+    margin-right: 40px;
+    transition: ease 200ml;
+
+
+
+}
+@media (max-width: 1000px){
+    #pala span{
+        box-sizing: 20px;
+        font-size: 30px;
+        position: relative;
+        top: 1px;
+        margin-right: 10px;
+    }
+    #pala{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: -280px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .body{
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 700px){
+    #pala span{
+        font-size: 19px;
+    }
+}
+
+
+#s1{
+    color: yellow;
+}
+#s2{
+color: rgb(16, 255, 16);
+}
+#s3{
+color: rgb(0, 102, 255);
+}
+#s4{
+color: red;
+}
+
+#iconos1{
+    position: absolute;
+    left: 50px;
+    top: -370px;
+    text-align: center;
+
+}
+
+#iconos1 i{
+    
+    font-size: 40px;
+    margin-right: 150px;
+    color: rgb(152, 152, 152);
+}
+
+#eat{
+    transition: 200ms ease;
+}
+#eat:hover{
+    color: rgb(247, 247, 68);
+}
+#sleep {
+    transition: 200ms ease;
+}
+#sleep:hover{
+    color: rgb(47, 180, 49);
+}#code{
+    transition: 200ms ease;
+}
+#code:hover{
+    color: rgb(68, 134, 247);
+}#repeat{
+    transition: 200ms ease;
+}
+#repeat:hover{
+    color: rgb(247, 68, 68);
+}
+
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+}
+.container h2{
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+}
+.container p{
+    position: relative;
+    background-color: rebeccapurple;
+    top: 50%;
+}
+.skills-area {
+    flex-wrap: wrap;
+    margin-left: 50%;
+    background-color: rgb(0, 255, 213);
+    display: flex;
+    position: relative;
+    height: 200px;
+    width: 50%;
+    top: -200px;
+    max-width: 100%;
+
+
+}
+
+
+.skills-area h2 {
+    margin: 40px;
+    font-size: 25px;
+    position: relative;
+    left: 0px;
+}
+
+
+
+.row{
+    position: relative;
+    margin-top: -300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+aside{
+    flex: 50%;
+    padding: 20px;
+    margin-top: 5%;
+    border-radius: 5%;
+
+}
+aside p{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    aside p {
+        /* Estilos específicos para pantallas más pequeñas */
+        font-size: 10px; /* Cambia el tamaño de fuente, por ejemplo */
+        margin-left: 10px; /* Ajusta el margen izquierdo para pantallas más pequeñas */
+    }
+}
+section{
+    flex: 40%;
+    padding: 20px;
+    border-radius: 5%;
+    margin-top: 5%;
+
+}
+
+
+.sk img{
+    border-radius: 5px;
+    margin-right: 8px;
+    border-radius: 5px;
+    margin-right: 8px;
+
+}
+
+#css{
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    transition: ease 220ms;
+    transition-delay: 20ms;
+
+}
+#css:hover{
+    width: 102px;
+    height: 102px;
+    transform: scale(1.1); /* Aplica una escala al hacer hover */
+
+}
+
+#html{
+    left: 115px;
+    width: 100px;
+    height: 100px;
+    transition: ease 220ms;
+    transition-delay: 20ms;
+
+
+
+}
+
+#html:hover{
+    width: 102px;
+    height: 102px;
+    transform: scale(1.1); /* Aplica una escala al hacer hover */
+
+}
+
+#java{
+    left: 230px;
+    width: 100px;
+    height: 100px;
+    transition: ease 220ms;
+    transition-delay: 20ms;
+
+}
+#java:hover{
+    width: 102px;
+    height: 102px;
+    transform: scale(1.1); /* Aplica una escala al hacer hover */
+
+
+}
+#terminal{
+    left: 335px;
+    width: 100px;
+    height: 100px;
+    transition: ease 220ms;
+    transition-delay: 20ms;
+
+}
+#terminal:hover{
+    width: 110px;
+    height: 110px;
+
+}
+
+
+.contact{
+    position: relative;
+    text-align: center;
+    display: block;
+    grid-row: auto;
+    margin: 10%;
+}
+.contact h2{
+    flex: 50%;
+}
+.contact img{
+    flex: 2%;
+}
+.contact:hover img{
+    font-size: larger;
+}
+
+.imagen-contac img:hover {
+    width: 75px;
+    position: absolute;
+}
+
+
+    
+
+@media (max-width: 1548px){
+
+
+}
+
+
+
+
+
+          
+
+     .texto1 h3{
+        position: absolute;
+        top: -1910px;
+        left: -247px;
+        text-decoration-line: underline;
+        
+        .contenedor-de-textos{
+            background-color: rgb(202, 187, 187);
+         }
+    
+         .contenedor-de-textos .texto1{
+            position: relative;
+            left: -240px;
+              }
+    
+         .contenedor-de-textos #tt7{ 
+            left: 20px;
+            top: -15px;
+            font-size: 10px;
+       
+         }
+    
+         .texto2 h3{
+            position: relative;
+            top: -70px;
+            text-decoration-line: underline;
+            
+         }
+    
+         .contenedor-de-textos .tt8{ 
+            top: -80px;
+            text-align: center;
+    
+            font-size: 10px;
+       
+         }
+         .texto3 h3{
+            left: 550px;
+            top: -170px;
+            text-decoration-line: underline;
+            
+         }
+    
+         .contenedor-de-textos .tt9{ 
+            left: 490px;
+            top: -180px;
+    
+            font-size: 10px;
+       
+         }
+
+        
+
+    }
+
+  
+
+
+    .contacto .contacto-h2{
+        position: relative;
+        text-align: center;
+        left: -2px;
+        top: 101px;
+        font-size: 20px;
+    }
+    .contacto img{
+        position: relative;
+        top: 130px;
+   
+    }
+    .abajo {
+        height: auto; /* Cambia la altura según tus necesidades */
+        padding: 20px; /* Agrega espacio interno para el contenido */
+        text-align: center;
+        background-color: r;
+        padding-bottom: -1300px;
+
+    }
+
+    .abajo p{ 
+        text-align: center;
+        color: rgb(199, 199, 199);
+        font-size: 7px;
+
+    }
+
+    .abajo h2{
+        font-size: 20px;
+
+    }
+ 
+.palabras {
+    /* Estilos para .palabras aquí */
+    color: rgb(122, 120, 120);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: transparent;
+    border-top: -1px solid rgba(126, 120, 120, 0.2);
+    border-bottom: -2px solid rgba(126, 120, 120, 0.012);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(30px);
+    box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+    position: fixed;
+    z-index: 2; /* Asegura que .palabras esté por encima de otros elementos */
+    animation: fade-in 1s ease-in-out;
+    width: 100%;
+    overflow-x: hidden;
+    animation: fade-in 1s ease-in-out;
+
+
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ 
+
+
+
+
+hr {
+    margin-top: 169px ;
+    margin-left: -25px;
+    height: 0.1rem;
+    max-width: 100%;
+    border: none; /* Elimina el borde predeterminado del hr */
+    background-image: linear-gradient(to right, transparent 1%, rgba(0, 0, 0, 0.795) 40%, rgba(0, 0, 0, 1) 60%, transparent 100%);
+}
+
+
+
+/* Aplicar la fuente "Dancing Script" solo a la clase .texto */
+.texto {
+    font-family:"Dancing Script", cursive;
+    color: red;
+    /* Otras propiedades de estilo aquí */
+}
+
+.about{
+    margin-top: -110px; 
+    margin-left: 200px;
+    margin-bottom: 12px;
+}
+.about h2{
+    margin: 10px;
+}
+
+
+/* Otras reglas CSS existentes aquí */
+
+
+
+#hrr{
+    margin-top: 350px;
+
+
+}
+
+.flotador i{
+    position: relative;
+    top: 170px;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+.promax img {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    opacity: 0.1;
+}
+.portafolio{
+
+
+    text-align: center;
+    position: absolute;
+    top: 3200px;
+    left: 200px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+
+.portafolio img{
+    margin-right: 40px;
+    border-radius: 10px;
+
+
+}
+.portafolio img:hover{
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.portafolio h2 {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    position: relative;
+    left: -30px;
+    top: -420px;
+    margin: 20px;
+    font-size: 80px;
+}
+
+.contenedor-de-texto{
+    color: red;
+    position: absolute;
+    font-size: 200px;
+    text-align: center;
+}
+.texto1{
+    text-decoration: solid;
+    position: absolute;
+    top: 200px;
+    left: 170px;
+    text-decoration-line: underline;
+    text-decoration: solid;
+    color: rgb(59, 56, 56);
+
+}
+.texto1:hover {
+    color: rgb(25, 24, 23);
+}
+#tt7{
+    text-decoration: none;
+    position: absolute;
+    top: 240px;
+    left: 40px;
+}
+
+.texto2{
+    text-decoration-line: underline;
+    text-decoration: solid;
+    position: absolute;
+    top: 200px;
+    left: 560px;
+    color: rgb(59, 56, 56);
+
+}
+.texto2:hover {
+    color: rgb(25, 24, 23);
+
+}
+
+.tt8{
+    position: absolute;
+    top: 240px;
+    left: 420px;
+}
+
+.texto3{
+    position: absolute;
+    top: 200px;
+    left: 1080px;
+    text-decoration-line: underline;
+    text-decoration: solid;
+    color: rgb(59, 56, 56);
+
+}
+.texto3:hover{
+    color: rgb(25, 24, 23);
+
+}
+
+.tt9{
+    position: absolute;
+    top: 240px;
+    left: 930px;
+}
+#login {
+    width: 400px;
+    position: relative;
+    top: -400px;
+    transition:  ease 200ms;
+
+}
+
+#aapp{
+    position: relative;
+    top: -400px;
+    width: 400px;
+    height: 400px;
+    transition:  ease 300ms;
+
+}
+
+#el-link{
+    width: 400px;
+    position: relative;
+    top: -400px;
+}
+
+#linea{
+    position: relative;
+    top: 0px;
+}
+.contacto{
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 230px;
+    
+}
+.contacto h2{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    top: -70px;
+    font-size: 50px;
+}
+
+.contacto img{
+    margin-right: 10px;
+     border-radius: 4px;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+
+.foot{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.892);
+    position: relative;
+    text-align: center;
+    color: aliceblue;
+}
+
+.abajo h2{
+    margin: 30px;
+}
+.abajo p{
+    text-align: center;
+    margin-inline: 190px;
+}
+
+.abajo hr{
+    position: relative;
+    top: -130px;
+    left: -60px;
+    color: aliceblue;
+    background-image: linear-gradient(to right, transparent 1%, rgba(255, 255, 255, 0.795) 40%, rgb(255, 255, 255) 60%, transparent 100%);
+    
+}

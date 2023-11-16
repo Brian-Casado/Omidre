@@ -1,0 +1,561 @@
+body {
+    margin: 0;
+    background-color: rgb(234, 232, 232);
+    font-family: "Poppins", sans-serif;
+    
+}
+img{
+    max-width: 100%;
+}
+
+.logo{
+    margin-left: 3%;
+    width: 100%;
+    color: rgb(65, 65, 68);
+
+}
+@media screen and (max-width: 768px) {
+    .logo{
+        position: relative;
+        max-width: 100%;
+        height: auto; /* Para mantener la relación de aspecto de la imagen */
+        margin-left: 100px;
+        top: 8px;
+
+
+    }
+    
+}
+.toggle-menu{
+    position: fixed;
+    top: -1rem;
+    left: -0.6rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 80px;
+    z-index: 999999;
+    transition: ease 2s;
+}
+@media screen and (min-width: 768px) {
+    .toggle-menu {
+        display: none;
+    }
+    
+}
+.main-menu {
+    position: fixed;
+    width: 100%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(100px);
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+    
+    
+}
+
+.nav_img{
+    margin-bottom: -0px;
+    max-width: 100%;
+    min-width: 100%;
+    object-fit:cover;
+    margin: 0;
+}
+.main-menu--show{
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+    .main-menu {
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: translateY(0);
+        z-index: 22;
+
+
+    }
+    
+}
+.main-menu__item {
+    padding: 2em;
+}
+.main-menu__link {
+    color: rgb(90, 90, 90);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-content{
+    position: relative;
+    background-color: rgba(99, 40, 0, 0.397);
+    margin: 30px;
+    z-index: 9;
+    padding: 50px;
+    border-radius: 0.5rem;
+}
+
+.main-content img{
+    position: absolute;
+    width: auto;
+    height: 100vh;
+    top: -220px;
+    margin-top: 220px;
+    min-width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .main-content img{
+    position: relative;
+
+
+    }
+}
+
+@media screen and (max-width: 750px) and (min-width: 331px) {
+    /* Estilos específicos para pantallas de 330px a 750px de ancho */
+   body,html {
+    max-width: 100%;
+
+        font-size: 10px;
+    }
+    .wedding-container{
+        display: none;
+    }
+
+    .seo{
+        display: none;
+        padding: 20px;
+        max-height: fit-content;
+        font-size: 10px;
+        place-items: center;
+        background-color: #605252;
+    }
+    .seo_text p{
+        display: none;
+        background: transparent;
+        -webkit-backdrop-filter: blur(100px);
+        backdrop-filter: blur(10px);
+        padding: -22px;
+        width: 75%;
+        height: 25%;
+    }
+
+    .seo img{
+        padding: 5px;
+    }
+
+
+
+    /* Agrega otros estilos según tus necesidades */
+    .main-menu {
+        max-width: 20%;
+        padding: 0px;
+        display: flex;
+        position: fixed;
+        border-radius: 10px;
+        padding: 5px;
+
+        /* Estilos para el menú principal en pantallas más pequeñas */
+    }
+    .main-menu a{
+        flex-direction: row;
+        
+    }
+
+    .main-content {
+        display: none;
+
+    }
+    .gif_container {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 10%;
+        height: 10%;
+        border-radius: 20px;
+        display: none;
+        
+    }
+
+  
+
+    /* Agrega estilos específicos para otros elementos de tu página */
+}
+
+img{
+
+    margin: 0;
+}
+
+
+.wedding-container{
+    position: relative;
+    display: flex;
+    max-width: 100%;
+
+}
+
+.seo{
+    position: absolute;
+    display: flex;
+    min-height: 50vh;
+    width: 100%;
+    z-index: 9;
+    top: 25%;
+    padding: 20px;
+    margin: 0px;
+    place-items: center;
+    max-height: fit-content;
+
+    
+     
+
+}
+.seo img{
+    border-radius: 5%;
+    width: 25%;
+    object-fit:cover;
+    margin: 30px;
+    
+
+}
+.seo_text{
+    display: flex;
+    flex-wrap: wrap;
+    background: transparent;
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(10px);
+    color: white;
+    place-content: center;
+    max-height: 50vh;
+    padding: 2%;
+    width: 50%;
+    height: 50%;
+
+}
+
+
+
+
+
+.hrr {
+    width: 100%;
+    position: absolute;
+    margin-bottom: 60%;
+    display: flex; /* Cambia display de grid a flex para usar flexbox */
+    align-items: flex-start; /* Alineación vertical al comienzo (similar a flex-start) */
+    min-height: auto;
+}
+
+.hrr hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-image: linear-gradient(to right, transparent 1%, rgba(255, 255, 255, 0.795) 40%, rgb(255, 255, 255) 60%, transparent 100%);
+}
+
+
+
+
+
+
+.flex_container{
+    display: flex;
+    flex-wrap: wrap; /* Esto permite que los elementos salten a la siguiente línea si no caben */
+    font-size: 10px; /* Puedes ajustar el tamaño de fuente según tus preferencias */
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-left: 10%;
+
+
+}
+.content1_container{
+    display: flex;
+    min-height: auto;
+    max-width: 100%;
+    border: 2px solid black;
+    width: 30%;
+    height: 25vh;
+    margin: 30px;
+
+
+    
+
+}
+.content2_container{
+    border: 2px solid black;
+    width: 30%;
+    height: 25vh;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.337);
+    background: linear-gradient(to right,transparent,rgba(179, 115, 56, 0.374));
+
+
+}
+
+.content3_container{
+    flex-direction: row;
+    border: 2px solid black;
+    width: 20%;
+    height: 25vh;
+    max-width: 100%;
+    margin-right: 30%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.337);
+    background: linear-gradient(to right,transparent,rgba(179, 115, 56, 0.374));
+
+
+
+    
+}
+.content4_container{
+    border: 2px solid black;
+    width: 20%;
+    height: 25vh;
+    
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.gif_container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(assets/ezgif.com-gif-maker-12-1.gif);
+    background-size:cover;
+    align-items: flex-end;
+    padding: 100px;
+    
+}
+
+.gif_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative; /* Fix the image to the viewport */
+    z-index: -1; /* Behind the content */
+    
+}
+.gif_container h1{
+    text-align: center;
+    color: rgb(60, 33, 86);
+    font-size: 2rem;
+    text-decoration: underline ;
+    margin-bottom: 4%;
+    
+}
+
+
+
+
+
+.wrapper {
+    display: flex; /* Make the wrapper a flex container */
+    position: static;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(160, 160, 160, 0.2);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(100px);
+    box-shadow: 0 10px rgba(250, 246, 0, 246, 1.9);
+    color: #151414;
+    border-radius: 14px;
+    padding: 100px 100px;
+    top: 0%; /* Remove the top offset */
+    right: 50%;
+}
+
+  .wrapper h1 {
+    font-size: 26px; /* Puedes ajustar el tamaño de fuente a tu preferencia */
+  text-align: center;
+  }
+
+
+  .wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: rgb(155, 147, 147);
+    margin: 20px 0;
+    background: transparent;
+    
+  }
+
+  .wrapper .input-box- {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: rgb(155, 147, 147);
+    margin: 20px 0;
+    background: transparent;
+    
+  }
+
+
+.input-box input{
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(80, 78, 78);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+    color: #fefefece;
+}
+.input-box- input::placeholder {
+    color: #fefefece;
+    font-size: 20px;
+    padding: 10PX;
+  }
+
+  .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    margin-left: 10%;
+
+  }
+
+
+
+.input-box- input{
+    width: 100%;
+    height: 10vh;
+    background:transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(80, 78, 78);
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 10px;
+}
+
+
+
+
+  .wrapper .remenber-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+    
+
+  }
+  
+.remenber-forgot label input{
+  accent-color: #fff;
+  margin-right: 3px;
+
+
+}
+
+.remenber-forgot a {
+  color: #fff;
+  width: 30%;
+  text-decoration: none;
+  margin-top: 10px;
+   margin-left: -202px;
+  text-align: start;
+   background-color: red;
+  
+}
+
+.remenber-forgot a:hover {
+  text-decoration: underline ;
+
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  position: relative;
+  margin-right: 10%;
+  margin-top: 20%;
+  background: #ececec;
+  border: none; 
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: 100ms linear;
+}
+
+.btn:hover{
+  position: relative;
+  margin-left: -2px;
+  background: #e0dddd;
+  width: 335px;
+  height: 45.5px;
+
+
+}
+
+
+.wrapper .register-link {
+  font-size: 14.5;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.media{
+  font-size: 25px;
+  position: relative;
+  top: 370px;
+  left: -250px;
+  display: inline-block;
+  width: 30px;
+  height: 60px;
+  color: #fff;
+}
+
+.state-form{
+    background-color: red;
+    position: static;
+    z-index: 999;
+}
+
+
+
+
+

@@ -1,0 +1,36 @@
+body{
+    margin: 0%;
+    background-color: rgb(52, 47, 47);
+    color: aliceblue;
+}
+
+.box{
+    width: 400px; /* Tamaño de la caja */
+    height: 400px; /* Tamaño de la caja (opcional, si deseas una caja cuadrada) */
+    background-color: #e41212; /* Color de fondo de la caja (puedes cambiarlo) */
+    display: flex; /* Usar flexbox para centrar contenido */
+    position: relative; 
+    transition: 0.55s;
+    
+
+
+}
+
+.box:hover{
+    background-color: rgb(26, 46, 146);
+    height: 450px;
+    width: 450px;
+    border-radius: 10px;
+    display: flex; /* Usar flexbox para centrar contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-align: center; 
+
+}
+.box:hover p{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: gray;
+}
+
